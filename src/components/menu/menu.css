@@ -1,0 +1,26 @@
+.menu{
+    display: flex;
+    width: 80vw;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    height: 0;
+    z-index: 1000;
+}
+
+.menu__container{
+    width: 100%;
+}
+
+.menuIcono{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuIcono > i{
+    font-size: 1.6rem;
+    cursor: pointer;
+} 
