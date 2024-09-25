@@ -1,13 +1,13 @@
 .menu{
-    display: flex;
     width: 80vw;
     min-height: 100vh;
     padding: 20px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 0;
     z-index: 1000;
+    transform: translateX(-100%);
 }
 
 .menu__container{
@@ -18,9 +18,27 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 1rem;
 }
 
 .menuIcono > i{
     font-size: 1.6rem;
     cursor: pointer;
 } 
+
+.listaNav{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.listaNav > li{
+    display: flex;
+    gap: 1rem; 
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.activate{
+    transform: translateX(0%);
+}
